@@ -54,6 +54,7 @@ const resolvers = {
         // Creates new book
         const book = await Book.Create(data);
 
+        // Adds book to logged in user
         const user = await User.findOneAndUpdate(
           { _id: context.user._id },
           {
@@ -73,7 +74,9 @@ const resolvers = {
     },
 
     removeBook: async (parent, { bookId }, context) => {
+      // Checks if user is logged in
       if (context.user) {
+        // Finds logged in user and pulls the book
         const user = await User.findOneAndUpdate(
           { _id: context.user._id },
           {
