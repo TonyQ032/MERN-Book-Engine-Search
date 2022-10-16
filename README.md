@@ -2,11 +2,11 @@
 
 ## Description
 
+--- The project is not currently finished and is not deployed at the moment. Parts of it work locally but not everything is fully functional yet. ---
+
 This is a Full Stack, dynamic web application where users can search for, read about, and save books to their accounts. Users can sign up for an account and then they can save as many books as they like to their reading list.
 
 This application was created utilizing the following tools and technologies: MongoDB, Express, React, Node, and GraphQL. For a full list of the various libraries, packages, and technologies utilized for this project, please refer to the [Technologies](#technologies) section below.
-
-This project is currently deployed to Heroku and be accessed by clicking [here.]()
 
 ---
 
